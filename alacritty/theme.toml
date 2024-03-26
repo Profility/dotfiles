@@ -1,0 +1,30 @@
+# Used a script to export pywal's colors into an alacritty config
+# Script: https://github.com/egeesin/alacritty-color-export/pull/4
+
+[colors.primary]
+background = '#0B071D'
+foreground = '#bea7da'
+
+[colors.cursor]
+text = '#0B071D'
+cursor = '#bea7da'
+
+[colors.normal]
+black = '#0B071D'
+red = '#442494'
+green = '#5129A9'
+yellow = '#652EBB'
+blue = '#694CAB'
+magenta = '#712FC4'
+cyan = '#9031CB'
+white = '#bea7da'
+
+[colors.bright]
+black = '#857498'
+red = '#442494'
+green = '#5129A9'
+yellow = '#652EBB'
+blue = '#694CAB'
+magenta = '#712FC4'
+cyan = '#9031CB'
+white = '#bea7da'

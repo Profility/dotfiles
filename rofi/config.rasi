@@ -1,0 +1,105 @@
+configuration {
+	modes: "window,drun,run";
+	font: "JetBrainsMono Nerd Font Medium 11";
+	show-icons: true;
+	drun-display-format: "{icon} {name}";
+	display-window: "Windows";
+	display-run: "Run";
+	display-drun: "Applications";
+	terminal: "alacritty";
+}
+
+* {
+    active-background: #5129A9;
+    active-foreground: @foreground;
+    normal-background: @background;
+    normal-foreground: @foreground;
+    urgent-background: #442494;
+    urgent-foreground: @foreground;
+
+    alternate-active-background: @background;
+    alternate-active-foreground: @foreground;
+    alternate-normal-background: @background;
+    alternate-normal-foreground: @foreground;
+    alternate-urgent-background: @background;
+    alternate-urgent-foreground: @foreground;
+
+    selected-active-background: #442494;
+    selected-active-foreground: @foreground;
+    selected-normal-background: #5129A9;
+    selected-normal-foreground: @foreground;
+    selected-urgent-background: #652EBB;
+    selected-urgent-foreground: @foreground;
+
+    background-color: @background;
+    background: #0B071D95;
+    foreground: #bea7da;
+    border-color: @background;
+    spacing: 2;
+}
+
+#window {
+    width: 25%;
+    background-color: @background;
+    border: 0;
+    padding: 2.5ch;
+}
+
+#mainbox {
+    border: 0;
+    padding: 0;
+}
+
+#entry {
+   padding: 13;
+}
+
+#prompt {
+   padding: 13;
+}
+
+#message {
+    border: 2px 0px 0px;
+    border-color: @border-color;
+    padding: 1px;
+}
+
+#textbox {
+    text-color: @foreground;
+}
+
+#inputbar {
+	children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+#textbox-prompt-colon {
+    padding: 12;
+    expand: false;
+    str: "->";
+    margin: 0px 0.3em 0em 0em;
+    text-color: @normal-foreground;
+}
+
+#listview {
+    columns: 1;
+    lines: 8;
+    fixed-height: 0;
+    border: 2px 0px 0px;
+    border-color: @border-color;
+    spacing: 2px;
+    scrollbar: true;
+    padding: 2px 0px 0px;
+}
+
+#element {
+    border: 0;
+    padding: 8px;
+}
+
+#element.normal.normal {
+    background-color: @normal-background;
+}
+
+#element-icon {
+   size: 35;
+}
